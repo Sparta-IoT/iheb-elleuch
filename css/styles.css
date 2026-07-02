@@ -1,0 +1,416 @@
+/* =============================================
+   Personal Webpage — shared styles
+   Vanilla background, black text, modern layout
+   ============================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #faf6ee;
+  --bg-card: #fffdf8;
+  --text: #111111;
+  --text-muted: #333333;
+  --border: #d4cfc4;
+  --accent: #2c2c2c;
+  --max-width: 1100px;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* ---- Navigation ---- */
+
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  opacity: 1;
+  border-bottom-color: var(--text);
+}
+
+/* ---- Layout ---- */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+}
+
+/* ---- CV: Header ---- */
+
+.cv-header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.cv-photo {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
+}
+
+.cv-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: linear-gradient(135deg, #ede8dc, #e0d9c8);
+}
+
+.cv-intro h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.cv-intro .degree {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.cv-intro .summary {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.cv-intro .summary p + p {
+  margin-top: 0.5rem;
+}
+
+/* ---- CV: Contact bar ---- */
+
+.contact-bar {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.contact-bar a {
+  color: var(--text);
+}
+
+.contact-separator {
+  margin: 0 0.6rem;
+  color: var(--border);
+}
+
+/* ---- CV: Two-column body ---- */
+
+.cv-body {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 2.5rem;
+}
+
+/* ---- CV: Sections ---- */
+
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.entry-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.entry-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.entry-title a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.project-list a {
+  color: inherit;
+}
+
+.blog-content a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.blog-entry:target {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
+}
+
+.entry-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.entry-org {
+  font-size: 0.92rem;
+  margin-bottom: 0.35rem;
+}
+
+.entry-subtitle {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.entry ul {
+  margin-left: 1.25rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.entry ul li {
+  margin-bottom: 0.25rem;
+}
+
+.skills-list,
+.lang-list,
+.project-list {
+  list-style: none;
+  margin-left: 0;
+  font-size: 0.92rem;
+}
+
+.skills-list li,
+.lang-list li,
+.project-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.project-list li + li {
+  margin-top: 0.75rem;
+}
+
+/* ---- Blog ---- */
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/*
+  To add a new blog entry, copy the entire <article class="blog-entry"> block
+  below and paste it inside .blog-grid. Update the image src, date, title,
+  and paragraph text.
+*/
+
+.blog-entry {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.blog-entry img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-content {
+  padding: 1.75rem 1.75rem 1.75rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-content time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.blog-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.blog-content p + p {
+  margin-top: 0.75rem;
+}
+
+/* ---- Footer ---- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+  .cv-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-bar {
+    font-size: 0.82rem;
+  }
+
+  .contact-separator {
+    display: none;
+  }
+
+  .contact-bar span {
+    display: block;
+  }
+
+  .blog-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-content {
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

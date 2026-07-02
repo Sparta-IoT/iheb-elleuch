@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iheb Elleuch — Blog</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="site-name">Iheb Elleuch</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">CV</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <h1 class="page-title">Blog</h1>
+    <p class="page-subtitle">Projects, competitions, and milestones behind my CV.</p>
+
+    <div class="blog-grid">
+
+      <!--
+        HOW TO ADD A NEW ENTRY:
+        1. Copy an entire <article class="blog-entry"> block.
+        2. Paste it at the top of .blog-grid (newest first).
+        3. Give it a unique id (used by CV links: blog.html#your-id).
+        4. Save your image to images/blog/ and update src.
+      -->
+
+      <article class="blog-entry" id="girls-day-2026">
+        <img src="images/blog/girls-day.jpg" alt="U.Stall team at Girls' Day on Campus Göppingen">
+        <div class="blog-content">
+          <time datetime="2026-04-29">April 29, 2026</time>
+          <h2>Girls' Day at Campus Göppingen</h2>
+          <p>At the Girls' Day event on Campus Göppingen, U.Stall opened the lab doors to schoolgirls curious about technical careers. Participants tinkered, experimented, and got hands-on with our underwater robotics setup — discovering that engineering is creative, collaborative, and definitely not just for men.</p>
+          <p>As Software Team Lead, I helped show how software connects cameras, thrusters, and control systems into a working ROV. Events like this are part of U.Stall's corporate responsibility: mentoring students and engaging the community around marine technology.</p>
+          <p><a href="https://filstalwelle.de/video/2026-04-29-goeppingen-girls-day-bringt-maedchen-technische-berufe-naeher" target="_blank" rel="noopener">Watch the Filstalwelle coverage →</a></p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="ustall">
+        <img src="images/blog/ustall-group.png" alt="U.Stall team group photo">
+        <div class="blog-content">
+          <time datetime="2023-09-01">Since September 2023</time>
+          <h2>Co-founding U.Stall — Software Team Lead</h2>
+          <p>U.Stall started in late September 2023 when members of a one-time university project decided to build something lasting. Today we are an established student team of Mechatronics and Industrial Engineering students at Esslingen University of Applied Sciences, developing ROVs for the international MATE ROV World Championship.</p>
+          <p>I serve as Software Team Lead, responsible for software architecture, electrical integration, and communication systems. Our goal: fine-tune every detail and field an optimized ROV for the World Cup in Canada. The team operates like a company — with engineering presentations, technical documentation, marketing displays, and safety inspections alongside the pool competition itself.</p>
+          <p>Supported by mentors Thomas Hoover and Oliver Dürr, and sponsors including Andritz Schuler, VdF Esslingen, and Würth Elektronik. Follow our journey on <a href="https://www.instagram.com/u.stall25/" target="_blank" rel="noopener">Instagram @u.stall25</a>.</p>
+          <p><a href="https://www.hs-esslingen.de/wirtschaft-und-technik/forschung/projekte/standard-titel" target="_blank" rel="noopener">HS Esslingen project page →</a></p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="mate-rov-2025">
+        <img src="images/blog/ustall-team.jpg" alt="U.Stall ROV at MATE competition 2025">
+        <div class="blog-content">
+          <time datetime="2025-06-15">June 15, 2025</time>
+          <h2>MATE ROV World Championship 2025</h2>
+          <p>On June 15, 2025, U.Stall competed at the international MATE ROV Competition in Alpena, Michigan, USA — our second year on the world stage, now in the Explorer class. We presented our latest ROV and float design to judges from around the globe.</p>
+          <p>We finished <strong>11th place in Explorer</strong>, building on lessons from our 2024 debut. The competition tests far more than pool performance: engineering presentations, technical documentation, marketing displays, company specs, corporate responsibility, and safety inspections all count toward the final score.</p>
+          <p>Preparation for Canada 2026 is already underway — refining control software, optimizing thruster electronics, and improving our modular float systems.</p>
+          <p><a href="https://www.hs-esslingen.de/wirtschaft-und-technik/forschung/projekte/rov/events" target="_blank" rel="noopener">Event details on HS Esslingen →</a></p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="marine-visit">
+        <img src="images/blog/marine-visit.jpg" alt="U.Stall team visit to the German Navy">
+        <div class="blog-content">
+          <time datetime="2025-03-01">March 1, 2025</time>
+          <h2>Excursion to the German Navy</h2>
+          <p>In March 2025, U.Stall traveled to Eckernförde on the Baltic Sea for an exclusive excursion with the German Navy. The visit gave our team firsthand insight into maritime technology — the same domain our ROVs are built to operate in.</p>
+          <p>Seeing professional naval systems up close reinforced why we build underwater robots: ROVs reduce risk for divers and crews while enabling inspection, exploration, and maintenance in harsh marine environments. The experience directly informed how we think about reliability, safety analysis, and real-world deployment constraints.</p>
+          <p><a href="https://www.hs-esslingen.de/wirtschaft-und-technik/forschung/projekte/rov/events" target="_blank" rel="noopener">Past events on HS Esslingen →</a></p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="bosch-thesis">
+        <img src="images/blog/laser-thesis.svg" alt="Laser technology and LLM research">
+        <div class="blog-content">
+          <time datetime="2025-09-01">September 2025 – February 2026</time>
+          <h2>Bachelor Thesis: LLM Chatbot for Laser Processing</h2>
+          <p>At Bosch Manufacturing Solutions in Feuerbach, I completed my bachelor thesis on developing an LLM-based chatbot to support script generation for scanner-controlled laser processes — a low-resource programming environment where engineers traditionally write specialized process code by hand.</p>
+          <p>Key work included building a training dataset tailored to laser processing syntax, designing an evaluation methodology to measure programming performance of fine-tuned models, and comparing multiple LLM fine-tuning approaches on small datasets. The result: a locally deployable model that assists engineers without sending sensitive process data to external services.</p>
+          <p>This project sits at the intersection of manufacturing automation and modern AI — directly aligned with Bosch's work on laser beam shaping as a key enabler in laser material processing.</p>
+          <p><a href="https://de.linkedin.com/in/iheb-elleuch" target="_blank" rel="noopener">LinkedIn profile →</a></p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="bosch-internship">
+        <img src="images/blog/laser-thesis.svg" alt="WPF laser beam shaping software">
+        <div class="blog-content">
+          <time datetime="2024-09-01">September 2024 – January 2025</time>
+          <h2>Bosch Internship: Laser Beam Shaping GUI</h2>
+          <p>Before my thesis, I spent five months as a Research and Software Engineering Intern in Bosch's laser technology department. I led development of a graphical user interface in C# and WPF using the MVVM pattern — giving engineers intuitive control over dynamic laser beam shaping parameters.</p>
+          <p>On the backend, I built Python routines for data acquisition, beam optics control, and process optimization, connected via gRPC interfaces to the hardware layer. The final step was validating the complete software stack on the physical prototype — bridging simulation, control code, and real laser optics.</p>
+          <p>Laser beam shaping is emerging as a critical enabler beyond simply increasing laser power: it enables finer control over material processing outcomes in additive manufacturing and precision machining.</p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="mate-rov-2024">
+        <img src="images/blog/mate-2024.jpg" alt="U.Stall at MATE ROV competition 2024">
+        <div class="blog-content">
+          <time datetime="2024-06-15">June 15, 2024</time>
+          <h2>MATE ROV World Championship 2024 — Our Debut</h2>
+          <p>June 15, 2024 marked U.Stall's first appearance at the international MATE ROV Competition in Kingsport, Tennessee, USA. We entered the <strong>Pioneer class</strong> — the entry tier for newer teams — and placed <strong>4th</strong>, a strong result for a first-year team.</p>
+          <p>The MATE ROV Competition is a global STEM challenge where students design, build, and test underwater robots to solve real-world marine problems — from offshore maintenance to environmental monitoring. Tasks range from remotely operated pool missions to autonomous segments, plus engineering presentations and technical documentation.</p>
+          <p>ROV Hans, our first robot, carried the team: laser-cut acrylic mechanics, custom control software, three cameras, and a Reuleaux triangle form factor. That foundation made the step up to Explorer class in 2025 possible.</p>
+          <p><a href="https://www.hs-esslingen.de/wirtschaft-und-technik/forschung/projekte/rov/events" target="_blank" rel="noopener">Event details on HS Esslingen →</a></p>
+        </div>
+      </article>
+
+      <article class="blog-entry" id="rov-development">
+        <img src="images/blog/rov-luis.jpg" alt="ROV Luis underwater robot">
+        <div class="blog-content">
+          <time datetime="2024-01-01">2023 – 2026</time>
+          <h2>Building the U.Stall ROV Fleet</h2>
+          <p>Each competition cycle, U.Stall iterates on both the underwater vehicle and its surface float. Our fleet tells the story of continuous engineering improvement:</p>
+          <p><strong>ROV Hans</strong> — Our first ROV, focused on core functionality. Laser-cut acrylic mechanics, custom-developed control software, three cameras, and a distinctive Reuleaux triangle shape.</p>
+          <p><strong>ROV Luis</strong> — Designed for lower weight and smaller dimensions. Features a new gripper concept, three cameras, an optimized thruster layout, and a custom PCB for thruster control.</p>
+          <p><strong>Float Franz</strong> — Our first surface float with a simple pipe structure, fixed cable glands, and a mounting mechanism for the ROV.</p>
+          <p><strong>Float Clara</strong> — A stable float for Poseidon with modular construction: plastic pipe frame, syringe-based buoyancy bodies, and custom-turned end caps.</p>
+          <p><a href="https://www.hs-esslingen.de/wirtschaft-und-technik/forschung/projekte/standard-titel" target="_blank" rel="noopener">See the full fleet on HS Esslingen →</a></p>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Iheb Elleuch · <a href="https://www.instagram.com/u.stall25/" target="_blank" rel="noopener">@u.stall25</a></p>
+  </footer>
+
+</body>
+</html>
