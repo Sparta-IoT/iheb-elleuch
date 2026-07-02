@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iheb Elleuch — Competencies Journey</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Language Toggle Logic */
+    body.lang-en .de { display: none !important; }
+    body.lang-de .en { display: none !important; }
+    
+    .lang-toggle-container {
+      max-width: var(--max-width);
+      margin: 1rem auto -1rem;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .lang-toggle-btn {
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: inherit;
+      transition: opacity 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+    
+    .lang-toggle-btn:hover { opacity: 0.8; }
+  </style>
+</head>
+<body class="lang-en">
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="site-name">Iheb Elleuch</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">CV</a></li>
+          <li><a href="skills.html" class="active"><span class="en">Competencies Journey</span><span class="de">Kompetenz-Entwicklung</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="lang-toggle-container">
+    <button id="langToggleBtn" class="lang-toggle-btn">
+      <span class="en">Switch to German (DE)</span>
+      <span class="de">Wechseln zu Englisch (EN)</span>
+    </button>
+  </div>
+
+  <main>
+    <div class="page-header">
+      <h1 class="page-title"><span class="en">How I Built My Core Competencies</span><span class="de">Wie ich meine Kernkompetenzen aufgebaut habe</span></h1>
+      <p class="page-subtitle">
+        <span class="en">A look into the practical experiences, internships, and projects that shaped my technical stack.</span>
+        <span class="de">Ein Einblick in die praktischen Erfahrungen, Praktika und Projekte, die meinen Technologie-Stack geprägt haben.</span>
+      </p>
+    </div>
+
+    <div class="blog-grid">
+      
+      <article class="blog-entry">
+        <div style="background-color: #2c2c2c; display: flex; align-items: center; justify-content: center; color: white; min-height: 200px; font-weight: bold; font-size: 1.5rem;">C# & WPF</div>
+        <div class="blog-content">
+          <time>Bosch & U.Stall</time>
+          <h2><span class="en">Software Architecture & User Interfaces</span><span class="de">Softwarearchitektur & Benutzeroberflächen</span></h2>
+          <p class="en">My foundation in C# and WPF was solidified during my internship at Bosch Manufacturing Solutions. Tasked with developing a graphical interface for dynamic laser beam shaping, I had to ensure the UI was intuitive while seamlessly integrating with a complex Python backend via gRPC.</p>
+          <p class="en">I took these architectural principles directly into my role as Software Architecture Lead for the U.Stall MATE ROV team. I applied structured, object-oriented design to build a reliable control system that could handle live hardware inputs during international underwater robotics competitions.</p>
+          <p class="de">Meine Grundlagen in C# und WPF wurden während meines Praktikums bei Bosch gefestigt. Bei der Entwicklung einer grafischen Oberfläche für dynamische Laserstrahl-Formung musste ich sicherstellen, dass die UI intuitiv ist und nahtlos über gRPC mit einem komplexen Python-Backend kommuniziert.</p>
+          <p class="de">Diese Architekturprinzipien übertrug ich direkt auf meine Rolle als Software Architecture Lead für das U.Stall MATE ROV-Team, um ein zuverlässiges Steuerungssystem für internationale Unterwasserrobotik-Wettbewerbe aufzubauen.</p>
+        </div>
+      </article>
+
+      <article class="blog-entry">
+        <div style="background-color: #004a99; display: flex; align-items: center; justify-content: center; color: white; min-height: 200px; font-weight: bold; font-size: 1.5rem;">Python & Data Pipelines</div>
+        <div class="blog-content">
+          <time>Schuler Pressen</time>
+          <h2><span class="en">Real-Time Systems & Data Processing</span><span class="de">Echtzeitsysteme & Datenverarbeitung</span></h2>
+          <p class="en">Working directly with heavy industrial machinery at Schuler Pressen required absolute reliability in data handling. Over nearly two years as a working student, I mastered Python, SQL, and Time-Series data management.</p>
+          <p class="en">I built real-time monitoring infrastructures from the ground up, routing machine data via Node-RED, storing it in PostgreSQL and Prometheus, and visualizing critical metrics in Grafana. This role taught me how to take raw sensor data and turn it into actionable, high-level dashboards.</p>
+          <p class="de">Die Arbeit mit schweren Industriemaschinen bei Schuler Pressen erforderte absolute Zuverlässigkeit im Umgang mit Daten. In fast zwei Jahren als Werkstudent meisterte ich Python, SQL und das Management von Zeitreihendaten.</p>
+          <p class="de">Ich baute Echtzeit-Überwachungsinfrastrukturen von Grund auf auf, leitete Maschinendaten über Node-RED weiter, speicherte sie in PostgreSQL und Prometheus und visualisierte kritische Metriken in Grafana.</p>
+        </div>
+      </article>
+
+      <article class="blog-entry">
+        <div style="background-color: #4a0099; display: flex; align-items: center; justify-content: center; color: white; min-height: 200px; font-weight: bold; font-size: 1.5rem;">LLMs & AI</div>
+        <div class="blog-content">
+          <time>Bosch (Thesis)</time>
+          <h2><span class="en">Local Large Language Models & Finetuning</span><span class="de">Lokale Large Language Models & Finetuning</span></h2>
+          <p class="en">For my Bachelor Thesis at Bosch, I ventured into cutting-edge AI integration for manufacturing. I learned how to utilize tools like Axolotl and Llama-Factory to finetune locally executable LLMs, ensuring strict industrial data security.</p>
+          <p class="en">I engineered a scalable data generation pipeline and developed a chatbot designed specifically to automate the script generation for scanner-controlled laser processes, proving that AI can be safely and effectively deployed on the factory floor.</p>
+          <p class="de">Für meine Bachelor-Thesis bei Bosch wagte ich mich an die Integration modernster KI für die Fertigung. Ich lernte, Werkzeuge wie Axolotl und Llama-Factory zu nutzen, um lokal ausführbare LLMs zu trainieren und so strenge industrielle Datensicherheit zu gewährleisten.</p>
+          <p class="de">Ich entwickelte eine skalierbare Pipeline zur Datengenerierung und einen Chatbot, der speziell zur automatisierten Skripterstellung für Scanner-gesteuerte Laserprozesse entwickelt wurde.</p>
+        </div>
+      </article>
+
+      <article class="blog-entry">
+        <div style="background-color: #007a5e; display: flex; align-items: center; justify-content: center; color: white; min-height: 200px; font-weight: bold; font-size: 1.5rem;">IoT & C++</div>
+        <div class="blog-content">
+          <time>Academic Projects</time>
+          <h2><span class="en">Embedded Systems & Hardware Integration</span><span class="de">Eingebettete Systeme & Hardware-Integration</span></h2>
+          <p class="en">My passion for bridging the physical and digital worlds thrives in my project work. Through PinguBlocks and KlemmbausteinIoT, I learned how to build IoT architectures from scratch, utilizing Raspberry Pis, sensors, and custom 3D-printed housings.</p>
+          <p class="en">Whether I am dealing with C++ microcontrollers, CAN-bus communication layouts for ROV thrusters, or integrating physical building blocks with web interfaces, I enjoy getting my hands on the hardware just as much as writing the software.</p>
+          <p class="de">Meine Leidenschaft für die Verbindung der physischen und digitalen Welt zeigt sich in meiner Projektarbeit. Durch PinguBlocks und KlemmbausteinIoT lernte ich, IoT-Architekturen von Grund auf zu entwickeln, indem ich Raspberry Pis, Sensoren und 3D-gedruckte Gehäuse verwendete.</p>
+          <p class="de">Egal ob es um C++ Mikrocontroller, CAN-Bus-Kommunikationslayouts oder die Integration physischer Bausteine mit Webinterfaces geht – ich arbeite genauso gerne direkt an der Hardware wie an der Software.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Iheb Elleuch</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

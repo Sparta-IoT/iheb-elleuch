@@ -127,12 +127,14 @@ main {
 .cv-photo {
   flex-shrink: 0;
   width: 130px;
-  height: 130px;
+  height: 205px;
   border-radius: var(--radius);
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   border: 1px solid var(--border);
   background-color: var(--bg-card);
 }
+
 
 .cv-photo-placeholder {
   display: flex;
