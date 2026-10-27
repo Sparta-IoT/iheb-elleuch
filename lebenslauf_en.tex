@@ -1,0 +1,171 @@
+\documentclass[10pt,a4paper]{article}
+
+% Language and Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% Font (Sans Serif to match the modern CV look)
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Layout and Margins (Reduced outer borders so more content fits cleanly)
+\usepackage[top=0.7cm, bottom=0.7cm, left=0.7cm, right=0.7cm]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Custom Colors
+\definecolor{dark}{RGB}{0,0,0}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries\color{dark}}
+  {}{0em}
+  {\uppercase}[\vspace{-0.5em}\rule{\linewidth}{0.8pt}]
+\titlespacing{\section}{0pt}{1.2ex}{0.8ex}
+
+% Custom list spacing for tighter bullets
+\setlist[itemize]{leftmargin=1.4em, itemsep=1.5pt, parsep=0pt, topsep=1.5pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% ==========================================
+% HEADER SECTION (Picture + Profile Summary)
+% ==========================================
+\begin{minipage}[c]{0.16\textwidth}
+    \includegraphics[width=\linewidth]{profile.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.80\textwidth}
+    {\Huge \textbf{Iheb Elleuch}}\\[0.3em]
+    {\large \textbf{\textit{B.Eng. Automation Systems and Production Informatics}}}\\[0.5em]
+    \hspace*{1.5em}Automation Engineering graduate specializing in industrial and hardware-near software development, visualization, and monitoring. Explored LLM-based solutions for writing process files in laser manufacturing with limited data.\\[0.4em]
+    \hspace*{1.5em}Proven ability to structure and plan projects, work independently, and deliver results in a timely manner. Current Master Student at the University of Stuttgart in Engineering Cybernetics, focusing on Machine Learning, Robotics, and Control.
+\end{minipage}
+
+\vspace{0.7em}
+
+% ==========================================
+% CONTACT INFORMATION
+% ==========================================
+\hrule height 0.8pt
+\vspace{0.3em}
+\begin{center}
+    \faEnvelope \ \href{mailto:elleuchiheb2002@gmail.com}{elleuchiheb2002@gmail.com} \quad
+    \faPhone \ +49 176 84848534 \quad
+    \faLinkedin \ \href{https://de.linkedin.com/in/iheb-elleuch}{linkedin.com/in/iheb-elleuch} \quad
+    \faGlobe \ \href{https://elleuch-tech.de/}{elleuch-tech.de} \quad
+    \faMapMarker \ 73734 Esslingen
+\end{center}
+\vspace{0.1em}
+\hrule height 0.8pt
+\vspace{1.0em}
+
+% ==========================================
+% BODY SECTION (Two Columns)
+% ==========================================
+\begin{minipage}[t]{0.66\textwidth}
+    
+    % --- EDUCATION ---
+    \section*{EDUCATION}
+    \textbf{Master of Science} \hfill since 10/2026\\
+    University of Stuttgart (Stuttgart, Germany)\\[0.2em]
+    \textit{Engineering Cybernetics (1. Semester)}
+    \begin{itemize}
+        \item \textbf{Focus Areas:} Concepts of Automatic Control (Lyapunov Stability, LQR, $\mathcal{H}_{\infty}$), Modeling \& Simulation in Mechatronics, Machine Learning in System Dynamics, Control Lab (3DOF Helicopter).
+    \end{itemize}
+    \vspace{0.6em}
+
+    \textbf{Bachelor of Engineering} \hfill 09/2022 - 02/2026\\
+    Esslingen University of Applied Sciences (Göppingen, Germany)\\[0.2em]
+    \textit{Automation Systems and Production Informatics}
+    \begin{itemize}
+        \item \textbf{Final Grade:} 1.9 (210 ECTS)
+        \item \textbf{Core Qualifications:} Real-time software development, distributed automation solutions, and industrial networking (PLCs, fieldbuses, motion control, and remote diagnostics).
+        \item \textbf{Engineering Scope:} Hardware/software co-design, simulation, and commissioning of mechatronic systems through interdisciplinary project engineering.
+        \item \textbf{Semester Abroad:} ESTACA, Paris, France (01/2025 - 05/2025)
+        \item \textbf{Extracurriculars:} Co-founder of the underwater robotics initiative U.Stall
+    \end{itemize}
+    
+    \vspace{0.8em}
+
+    % --- WORK EXPERIENCE ---
+    \section*{PROFESSIONAL EXPERIENCE}
+    
+    \textbf{Bachelor Thesis in Laser Technology} \hfill 09/2025 - 02/2026\\
+    Bosch Manufacturing Solutions GmbH
+    \vspace{-0.2em}
+    \begin{itemize}
+        \item Demonstrated the feasibility of LLMs to assist in the creation of process files in industrial environments.
+        \item Overcame limited data availability through synthetic data scaling techniques and the development of a benchmark method.
+        \item Evaluated fine-tuning techniques and data curation methods to optimize performance on local hardware.
+    \end{itemize}
+    
+    \vspace{0.6em}
+    \textbf{Research \& Software Engineering Intern} \hfill 09/2024 - 01/2025\\
+    Bosch Manufacturing Solutions GmbH
+    \vspace{-0.2em}
+    \begin{itemize}
+        \item Led the UI/UX development of a C\#/WPF graphical interface for dynamic laser beam shaping.
+        \item Designed a robust backend communication architecture using gRPC and Python.
+        \item Expanded backend functionality to support new features and optimized laser beam shaping algorithms.
+        \item Conducted routine validation of the software prototype.
+    \end{itemize}
+
+    \vspace{0.6em}
+    \textbf{Working Student - Real-Time Systems} \hfill 12/2022 - 08/2024\\
+    Schuler Pressen GmbH (Andritz)
+    \vspace{-0.2em}
+    \begin{itemize}
+        \item Expanded the monitoring infrastructure and visualized critical data through Grafana dashboards.
+        \item Collected and optimized data pipelines using Prometheus, PostgreSQL, and Node-RED routing.
+        \item Developed and maintained time-saving automation scripts for faster data processing and easier upgrade iterations.
+    \end{itemize}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.30\textwidth}
+
+    % --- SKILLS ---
+    \section*{CORE COMPETENCIES}
+    \begin{itemize}
+        \item \textbf{Programming:} C++, C\#, Python, JavaScript, SQL, MATLAB/Simulink, VBA
+        \item \textbf{Technologies:} WPF, .NET, gRPC, Linux, Node-RED, Grafana, Prometheus, PostgreSQL, LLM Fine-tuning
+        \item \textbf{Robotics \& Control:} Hardware-in-the-Loop, Sensor/Actuator Integration, PLCs, Motion Control, Real-Time Systems
+        \item \textbf{Tools:} Git (GitHub, GitLab, Azure), Docker, Visual Studio, VS Code, Unity Engine, Axolotl, Llama-Factory
+        \item \textbf{Other:} Driver's License (Class B)
+    \end{itemize}
+    
+    % --- LANGUAGES ---
+    \section*{LANGUAGES}
+    \begin{itemize}
+        \item \textbf{German:} Native
+        \item \textbf{Arabic:} Native
+        \item \textbf{English:} C1 Professional
+        \item \textbf{French:} B2 Intermediate
+    \end{itemize}
+    
+    \vspace{0.6em}
+    
+    % --- PROJECTS ---
+    \section*{KEY PROJECTS}
+    \begin{itemize}
+        \item \textbf{U.Stall (MATE ROV):}\\
+        Software Lead \& Team Lead (One Season). Architected and developed the complete software stack for vertical integration between the ROV and the pilot interface. International participation: USA 2024 (Pioneer), USA 2025 (Explorer), Canada 2026 (Explorer).
+        \vspace{0.4em}
+        \item \textbf{Academic Robotics Projects:}\\
+        \textbf{PinguBlocks:} Co-developed a voice-controlled, penguin-shaped robot utilizing a Raspberry Pi and a custom web interface.\\
+        \textbf{KlemmbausteinIoT:} Co-engineered a modular IoT robotics platform using interlocking brick components and commercial hardware for academic teaching environments.
+    \end{itemize}
+
+\end{minipage}
+
+\end{document}
